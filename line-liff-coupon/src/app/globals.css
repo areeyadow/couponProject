@@ -3,7 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --font-thai: 'Kanit', sans-serif;
+  --font-thai: "Kanit", sans-serif;
 }
 
 @theme inline {
@@ -56,5 +56,5 @@ body {
 @font-face {
   font-family: "Thai Text";
   src: local("Kanit");
-  unicode-range: U+0E01-U+0E5B;
+  unicode-range: U+0E01- U+0E5B;
 }

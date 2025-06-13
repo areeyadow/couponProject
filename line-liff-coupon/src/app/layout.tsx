@@ -21,7 +21,7 @@ const kanit = Kanit({
 });
 
 export const metadata: Metadata = {
-  title: "LINE LIFF Coupon App",
+  title: "Coupon App By KD and Co,",
   description: "A LINE LIFF application for coupons",
 };
 
