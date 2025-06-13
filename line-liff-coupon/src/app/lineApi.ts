@@ -1,42 +1,9 @@
-// Define types for LINE messages
-type FlexContainer = {
-  type: string;
-  header?: FlexBox;
-  hero?: FlexBox;
-  body?: FlexBox;
-  footer?: FlexBox;
-  styles?: Record<string, any>;
-};
-
-type FlexBox = {
-  type: string;
-  layout: string;
-  contents: Array<FlexComponent>;
-  backgroundColor?: string;
-  paddingTop?: string;
-  paddingBottom?: string;
-};
-
-type FlexComponent = {
-  type: string;
-  text?: string;
-  size?: string;
-  weight?: string;
-  color?: string;
-  align?: string;
-  wrap?: boolean;
-  margin?: string;
-  action?: {
-    type: string;
-    label: string;
-    uri: string;
-  };
-};
-
+/* eslint-disable @typescript-eslint/no-explicit-any */
+// Define type for the message
 type LineMessage = {
   type: string;
   altText?: string;
-  contents?: FlexContainer;
+  contents?: any;
   text?: string;
 };
 

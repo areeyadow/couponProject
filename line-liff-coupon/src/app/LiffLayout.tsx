@@ -3,7 +3,7 @@ import { LiffProvider, useLiff } from "./LiffProvider";
 
 // The LIFF wrapper component
 function LiffInitializer({ children }: { children: React.ReactNode }) {
-  const { liff, liffError, isLoading } = useLiff();
+  const { liffError, isLoading } = useLiff();
 
   if (isLoading) {
     return (
