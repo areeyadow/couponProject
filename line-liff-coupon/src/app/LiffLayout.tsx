@@ -16,6 +16,7 @@ function LiffInitializer({ children }: { children: React.ReactNode }) {
           alignItems: "center",
           justifyContent: "center",
           p: 4,
+          bgcolor: "grey.100",
         }}
       >
         <Paper
@@ -24,6 +25,7 @@ function LiffInitializer({ children }: { children: React.ReactNode }) {
             p: 4,
             textAlign: "center",
             borderRadius: 2,
+            maxWidth: 300,
           }}
         >
           <Typography
@@ -31,11 +33,24 @@ function LiffInitializer({ children }: { children: React.ReactNode }) {
             sx={{
               mb: 3,
               fontWeight: "bold",
+              color: "#0d3b66",
             }}
           >
-            Loading Page...
+            LINE LIFF
           </Typography>
-          <CircularProgress color="primary" size={40} />
+          <Typography
+            variant="body1"
+            sx={{ mb: 3, fontFamily: "var(--font-kanit)" }}
+          >
+            กำลังโหลด...
+          </Typography>
+          <CircularProgress
+            sx={{
+              color: "#B497E7",
+              mb: 2,
+            }}
+            size={40}
+          />
         </Paper>
       </Box>
     );
@@ -51,6 +66,7 @@ function LiffInitializer({ children }: { children: React.ReactNode }) {
           alignItems: "center",
           justifyContent: "center",
           p: 4,
+          bgcolor: "grey.100",
         }}
       >
         <Paper
@@ -59,7 +75,7 @@ function LiffInitializer({ children }: { children: React.ReactNode }) {
             p: 4,
             textAlign: "center",
             borderRadius: 2,
-            maxWidth: "sm",
+            maxWidth: 350,
           }}
         >
           <Typography
@@ -70,14 +86,27 @@ function LiffInitializer({ children }: { children: React.ReactNode }) {
               color: "error.main",
             }}
           >
-            Error loading LIFF
+            ไม่สามารถโหลด LINE LIFF ได้
           </Typography>
-          <Typography variant="body1" color="text.secondary" sx={{ mb: 2 }}>
+          <Typography
+            variant="body1"
+            color="text.secondary"
+            sx={{
+              mb: 2,
+              fontFamily: "var(--font-kanit)",
+            }}
+          >
             {liffError}
           </Typography>
-          <Typography variant="body2" sx={{ mt: 2 }}>
-            Please make sure you are accessing this page through the LINE app or
-            that you have set up LIFF correctly.
+          <Typography
+            variant="body2"
+            sx={{
+              mt: 2,
+              fontFamily: "var(--font-kanit)",
+            }}
+          >
+            โปรดตรวจสอบว่าคุณกำลังเข้าถึงเพจนี้ผ่านแอป LINE หรือตั้งค่า LIFF
+            อย่างถูกต้องแล้ว
           </Typography>
         </Paper>
       </Box>
