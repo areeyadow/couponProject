@@ -166,7 +166,10 @@ export default function Home() {
                 action: {
                   type: "uri",
                   label: "ใช้คูปองตอนนี้ไหมจ้ะ",
-                  uri: "https://i.pinimg.com/originals/b5/65/bd/b565bd72e790101714b9a35fd490eec4.gif",
+                  uri:
+                    coupon.id === 1
+                      ? "https://web.hungryhub.com/th/restaurants/group/bangkok-best-buffet-restaurants/web"
+                      : "https://www.watsons.co.th/th/blog/makeup-styles-th/10-%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B3%E0%B8%AD%E0%B8%B2%E0%B8%87%E0%B8%96%E0%B8%B9%E0%B8%81%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%94%E0%B8%B5%E0%B8%AA",
                 },
                 color: "#B497E7",
                 style: "primary",
