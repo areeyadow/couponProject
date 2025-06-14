@@ -116,7 +116,7 @@ export default function Home() {
             contents: [
               {
                 type: "text",
-                text: "แอดมินปิ๊งป๋อง send this",
+                text: "แอดมินปิ๊งป่อง send this",
                 color: "#FFFFFF",
                 weight: "bold",
               },
