@@ -36,7 +36,7 @@ function LiffInitializer({ children }: { children: React.ReactNode }) {
               color: "#0d3b66",
             }}
           >
-            LINE LIFF
+            KD and Co.
           </Typography>
           <Typography
             variant="body1"
